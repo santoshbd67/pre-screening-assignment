@@ -5,9 +5,12 @@ function App() {
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState(''); // State for message display
 
+  // Use an environment variable for the backend URL
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:8000";
+
   const handleSubmit = async (action) => {
     try {
-      const response = await fetch(`http://localhost:8000/${action}`, {
+      const response = await fetch(`${BACKEND_URL}/${action}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
