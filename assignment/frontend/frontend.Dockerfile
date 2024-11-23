@@ -8,6 +8,7 @@ RUN npm install
 
 
 COPY . .
-
+# Set the backend URL for the frontend
+ENV REACT_APP_BACKEND_URL=http://public_ip_instance:8000
 CMD ["npm", "start"]
 EXPOSE 3000
