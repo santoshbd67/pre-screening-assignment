@@ -6,7 +6,7 @@ function App() {
   const [message, setMessage] = useState(''); // State for message display
 
   // Use an environment variable for the backend URL
-  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:8000";
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://98.84.162.92:8000";
 
   const handleSubmit = async (action) => {
     try {
