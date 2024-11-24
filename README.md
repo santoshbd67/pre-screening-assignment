@@ -125,7 +125,7 @@ def get_db_connection():
     return psycopg2.connect(DATABASE_URL)
 ```
 
-## 3.Created multi-stage docker file so that i can build and run the frontend backend and postresql in a single file
+## 3.Created multi-stage docker file so that i can build and run the frontend backend and postresql in a docker-compose file
 docker-compose.yml
 ```
 version: '3.8'
@@ -168,4 +168,7 @@ services:
 volumes:
   postgres_data:
 ```
-
+## Build and Run the dokcer container for frontend backend and postgresql
+```
+docker-compose up --build -d
+```
