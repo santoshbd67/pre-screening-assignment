@@ -7,7 +7,7 @@
     git checkout -b solutions-santosh
 ```
 ## 2.Make changes in source code
-    Made the some changes in frontend docker file App.js file backend data.py file so that frontend and backend can connect each other below are file which i have changed
+Made the some changes in frontend docker file App.js file backend data.py file so that frontend and backend can connect each other below are file which i have changed
 
     
 ##### frontend.dockerfile
