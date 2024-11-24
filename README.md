@@ -178,3 +178,8 @@ docker-compose up --build -d
 
 ## Create new user in UI
 Access the application and add the new user
+<img width="960" alt="frontend" src="https://github.com/user-attachments/assets/f3cfa5a2-22c6-47b1-858f-00f06ffaaf67">
+
+<img width="960" alt="backend" src="https://github.com/user-attachments/assets/749acd73-f59a-4658-830e-c4e2dfb81b5a">
+
+
