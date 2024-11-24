@@ -182,4 +182,7 @@ Access the application and add the new user
 
 <img width="960" alt="backend" src="https://github.com/user-attachments/assets/749acd73-f59a-4658-830e-c4e2dfb81b5a">
 
+## Conclusion
+For this demonstration, I used my AWS account to create an EC2 instance. I configured the inbound rules in the security group to allow access for the frontend, backend, and PostgreSQL. Currently, I have allowed 0.0.0.0/0 for demonstration purposes, but this is not recommended in a real-time production environment. In a real scenario, it is best practice to restrict access by allowing only the necessary IP addresses in the security group to enhance security.
+
 
