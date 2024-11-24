@@ -173,5 +173,5 @@ volumes:
 docker-compose up --build -d
 ```
 ## 5.Access the application 
-forntend http://Instace_public_Ip:3000
-backend http://Instace_public_Ip:8000/docs
+##### forntend http://Instace_public_Ip:3000
+##### backend http://Instace_public_Ip:8000/docs
