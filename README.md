@@ -168,7 +168,10 @@ services:
 volumes:
   postgres_data:
 ```
-## Build and Run the dokcer container for frontend backend and postgresql
+## 4.Build and Run the dokcer container for frontend backend and postgresql
 ```
 docker-compose up --build -d
 ```
+## 5.Access the application 
+forntend http://Instace_public_Ip:3000
+backend http://Instace_public_Ip:8000/docs
