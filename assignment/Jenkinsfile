@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'docker-compose -f assignment/docker-compose.yml up -d'
+                sh 'docker-compose -f assignment/docker-compose.yml up --build -d'
             }
         }
         stage('Push Image to ECR') {
