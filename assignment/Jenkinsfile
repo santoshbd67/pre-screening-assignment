@@ -11,4 +11,5 @@ pipeline {
                 sh 'docker-compose -f assignment/docker-compose.yml up --build -d'
             }
         }
+    }
 }
