@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/santoshbd67/pre-screening-assignment.git'
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker-compose build'
+            }
+        }
+        stage('Push Image to ECR') {
+            steps {
+                script {
+                    // Authenticate to ECR
+                    withCredentials([usernamePassword(credentialsId: 'aws-credentials')]) {
+                        sh 'aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin'
+                    }
+                    // Tag the image with ECR repository URI
+                    sh 'docker tag your-image-name:latest your-account.dkr.ecr.us-east-1.amazonaws.com/your-image-name:latest'
+                    // Push the image to ECR
+                    sh 'docker push your-account.dkr.ecr.us-east-1.amazonaws.com/your-image-name:latest'
+                }
+            }
+        }
+    }
+}
